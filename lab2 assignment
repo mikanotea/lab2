@@ -1,0 +1,38 @@
+#******************************************************************************
+# Author:           Sammi Eady
+# Lab:              2
+# Date:             4/14/2023
+# Description:      A program that calculates the cost for however many
+#                   desserts one might buy
+# Input:            Cookies, or any type of dessert
+# Output:           The cost the user owes
+# Sources:          Lab 2 instructions and video walkthrough
+#******************************************************************************
+
+# Welcome to Sammi's Bakery
+#
+# Enter item: cookies
+# Enter quantity: 2
+# Enter unit price $3.00
+#
+# You purchased: cookies
+# You owe: $6.00
+#
+# Thank you for stopping by!
+item_name = ""
+quantity = 0
+unit_price = 0.0
+total_price = 0.0
+
+print("Welcome to Sammi's Bakery!")
+
+item_name = input("Enter item: ")
+quantity = int(input("Enter quantity: "))
+unit_price = float(input("Enter unit price $ "))
+
+total_price = quantity * unit_price
+
+print("\nYou snagged:", item_name)
+print("You now owe: $", format(total_price, ".2f"))
+
+print("\nOur pastries are baked fresh daily! Come again :-)")
